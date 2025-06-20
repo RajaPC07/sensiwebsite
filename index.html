@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Free Fire Sensi Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="glass-card">
+    <h1><i class="fa-solid fa-gamepad"></i> Free Fire Sensi</h1>
+
+    <div class="section-label"><i class="fa-solid fa-mobile-screen-button"></i> Select Brand:</div>
+    <select id="brand"></select>
+
+    <div class="section-label"><i class="fa-solid fa-tablet-screen-button"></i> Select Model:</div>
+    <select id="model"></select>
+
+    <div class="section-label"><i class="fa-solid fa-crosshairs"></i> Choose Sensitivity:</div>
+    <select id="playstyle">
+      <option value="high">High Sensitivity</option>
+      <option value="low">Low Sensitivity</option>
+    </select>
+
+    <div class="section-label"><i class="fa-solid fa-memory"></i> Choose RAM:</div>
+    <select id="ram">
+      <option value="4">4 GB</option>
+      <option value="6">6 GB</option>
+      <option value="8">Above 8 GB</option>
+    </select>
+
+    <div class="subscribe-box">
+      <p><i class="fa-brands fa-youtube"></i> Please subscribe to our YouTube channel to unlock settings!</p>
+      <div class="yt-subscribe">
+        <div class="g-ytsubscribe" data-channelid="YOUR_CHANNEL_ID" data-layout="default" data-count="default"></div>
+      </div>
+      <button onclick="enableButton()">I Subscribed</button>
+    </div>
+
+    <button class="generate-btn" onclick="generateSensi()" disabled id="genBtn">🎯 Generate Settings</button>
+    <div id="output"></div>
+  </div>
+
+  <footer>
+    <p>Connect with us</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/YOUR_INSTAGRAM" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/@YOUR_CHANNEL" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://apis.google.com/js/platform.js"></script>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
