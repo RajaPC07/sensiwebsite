@@ -66,6 +66,7 @@ function enableButton() {
   document.getElementById("genBtn").disabled = false;
 }
 
+
 // Generate and display sensitivity settings
 function generateSensi() {
   const brand = document.getElementById("brand").value;
